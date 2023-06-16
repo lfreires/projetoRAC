@@ -14,7 +14,7 @@ inputs.forEach(input => {
 
         this.value = this.value.includes('.') ? this.value = this.value.slice(0, this.value.indexOf('.') + 3) : this.value ; //O valor do input possui ponto? se sim, corte o valor do começo até o valor de onde está o ponto + 2, se não deixe como está
     
-        this.value = this.value.length > 7 ? this.value.slice(0, 7) : this.value;
+        this.value = this.value.length > 7 ? this.value.slice(0, 7) : this.value; // O valor do input é maior que 7? Se sim corte do zero até o 7, se não, mantenha o valor.
     })
 
 })
