@@ -12,7 +12,12 @@ inputs.forEach(input => {
             this.value[1] == '.' ? this.value[1] = this.value.slice(0, 1) : this.value // O segundo valor é um '.'? Se sim apague o ponto cortando do primeiro valor até o segundo (deixando o segundo de fora) e adicionando um caractere vazio. Se não, deixe o mesmo valor.
         : this.value = this.value[0] == '.' ? '': this.value // Se não a primeira letra é um ponto? Se sim troque por nada
 
-        
+        for(i=0; i<this.value.length; i++){
+
+            if(this.value[i] == '.') this.value = this.value.slice(0, i+3);
+
+
+        }
 
     })
 
