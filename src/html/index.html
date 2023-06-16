@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b7b2a7db6a.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body class="corpo">
+
+        <header class="cabecalho">
+
+            <div class="cabecalho__conteudo">
+                
+                <img src="../docs/racbrasil_logo.png" class="cabecalho__imagem">
+                <h1 class="cabecalho__titulo">Seleção de componentes de equipamentos de refrigeração</h1>
+            
+            </div>
+            
+        </header>
+
+        <main class="principal">
+
+            <div class="principal__conteudo">
+
+                <nav class="principal__selecao">
+                    
+                    <a href="#" id="valvulaButton" class="principal__selecao__links selected"> Válvula de Expansão Eletrônica</a>
+                    <a href="#" id="tanqueButton" class="principal__selecao__links"> Tanque de Líquido</a>
+                    <a href="#" id="oilButton" class="principal__selecao__links"> Oil Pack</a>
+
+                </nav>
+
+                <nav class="principal__botoes">
+
+                    <button type="submit" class="botoes__botao botao__calcular" form="formulario">Calcular</button>
+
+                    <a class="botoes__botao botao__documento" href="../docs/catalogoValvulaExpansaoEletronica.ad24fdad.pdf">Documentação</a>
+
+                    <button class="botoes__botao botao__circuito">Circuito</button>
+
+                </nav>
+
+                <section class="principal__form">
+
+                    <form action="" class="form__conteudo" id="formulario">
+                        
+                        <section class="form__secao__esquerda">
+
+                            <h2 class="form__titulo">Pârametros do equipamento:</h2>
+
+                            <div class="form__secao">
+
+                                <label for="" class="secao__descricao">Capacidade de Refrigeração:</label>
+
+                                <div class="secao__input">
+
+                                    <input type="text" class="form__input" id="input" required>
+                                    <p class="form__input__icon">kW</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form__secao">
+
+                                <label for="" class="secao__descricao">Capacidade de Refrigeração:</label>
+
+                                <select name="" id="refrigerante" class="form__select" required>
+                                
+                                    <option value="R22" class="select__option">R22</option>
+                                    <option value="R134A" class="select__option">R134A</option>
+                                    <option value="R404A" class="select__option">R404A</option>
+                                    <option value="R407C" class="select__option">R407C</option>
+                                    <option value="R410" class="select__option">R410</option>
+                                    <option value="R507A" class="select__option">R507A</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form__secao">
+
+                                <label for="" class="secao__descricao">Temperatura de Evaporação:</label>
+
+                                <div class="secao__input">
+
+                                    <input type="text" class="form__input" id="input" required>
+                                    <p class="form__input__icon">ºC</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form__secao">
+
+                                <label for="" class="secao__descricao">Superaquecimento</label>
+
+                                <div class="secao__input">
+
+                                    <input type="text" class="form__input" id="input" required>
+                                    <p class="form__input__icon">K</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form__secao">
+
+                                <label for="" class="secao__descricao">Temperatura de Condensação: </label>
+
+                                <div class="secao__input">
+
+                                    <input type="text" class="form__input" id="input" required>
+                                    <p class="form__input__icon">ºC</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form__secao">
+
+                                <label for="" class="secao__descricao">Subresfriamento</label>
+
+                                <div class="secao__input">
+
+                                    <input type="text" class="form__input" id="input" required>
+                                    <p class="form__input__icon">K</p>
+
+                                </div>
+
+                            </div>
+                            
+                        </section>
+
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer class="rodape">
+
+        </footer>
+
+        <script src="../js/selecionaMenu.js"></script>
+        <script src="../js/confereEntradas.js"></script>
+
+    </body>
+
+</html>

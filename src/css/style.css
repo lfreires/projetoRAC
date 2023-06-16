@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');    
+.corpo {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-row: auto 1fr auto;
+    color: #555;
+}
+
+.cabecalho {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    padding: 4px 16px;
+    height: 70px;
+    background-color: rgb(255, 252, 196);
+}
+
+.cabecalho__conteudo {
+    grid-column: 2;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cabecalho__imagem {
+    grid-column: 1;
+    height: 52px;
+}
+
+.cabecalho__titulo {
+    grid-column: 2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.principal {
+    width: 100%;
+    margin-top: 24px;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.principal__conteudo {
+    grid-column: 2;
+    margin-left: 24px;
+    display: grid;
+    row-gap: 12px;
+    grid-template-rows: auto auto auto auto;
+}
+
+.principal__selecao {
+    grid-row: 1;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.principal__selecao__links {
+    font-size: 12px;
+    padding: 12px;
+    color: #337ab7;
+    margin-bottom: 0px;
+}
+
+.selected {
+    border: 1px solid #ddd;
+    border-bottom-color: white;
+    margin-bottom: -1px;
+    border-radius: 4px;
+    color: #555;
+}
+
+.principal__botoes{ 
+    grid-row: 2;
+    line-height: 1.42;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    column-gap: 6px;
+}
+
+.botoes__botao {
+    background-color: rgb(37, 70, 148);
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    border: 1px solid rgb(25, 52, 121);
+    border-radius: 4px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.botoes__botao::before {
+    margin-right: 8px;
+    height: 14px;
+}
+
+.botoes__botao:hover {
+    background-color: rgb(87, 115, 183);
+}
+
+.botoes__botao:active {
+    background-color: rgb(125, 152, 221);
+}
+
+.botao__calcular {
+    grid-column: 1;
+}
+
+.botao__calcular::before {
+    font: var(--fa-font-solid);
+    content: "\f04b";
+}
+
+.botao__documento {
+    grid-column: 2;
+}
+
+.botao__documento::before {
+    font: var(--fa-font-solid);
+    content: "\f15b";
+}
+
+.botao__circuito {
+    grid-column: 3;
+}
+
+.botao__circuito::before {
+    font: var(--fa-font-solid);
+    content: "\f03e";
+}
+
+.principal__form {
+    grid-row: 3;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: auto 50%;
+}
+
+.form__conteudo {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 50% auto;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.form__secao__esquerda {
+    grid-column: 1;
+}
+
+.form__titulo {
+    color: black;
+    font-weight: bold;
+}
+
+.form__secao {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: auto 84px;
+    align-items: center;
+}
+
+.secao__descricao {
+    grid-column: 1;
+}
+
+.secao__input {
+    grid-column: 2;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 70% 30%;
+    color: #555;
+    font-size: 12px;
+    transition: all 0.25s;
+}
+
+.secao__input:focus-within {
+    outline: solid 1px rgb(0, 123, 255);
+    box-shadow: 1px 1px 12px rgb(37, 70, 148);
+}
+
+.form__input {
+    padding: 2px 6px;
+    grid-column: 1;
+    color: #555;
+    font-size: 12px;
+}
+
+.form__input__icon {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    grid-column: 2;
+    border-left: solid 1px #ddd;
+    background-color: #eee;
+}
+
+.form__select {
+    background-image: url('../docs/chevron-down-solid.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    padding: 2px 6px;
+    background-origin: content-box;
+    font-size: 12px;
+    color: #555;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.form__select:focus {
+    background-image: url('../docs/chevron-down-solid-180.svg');
+    outline: solid 1px rgb(0, 123, 255);
+    box-shadow: 1px 1px 12px rgb(37, 70, 148);
+}
