@@ -10,15 +10,11 @@ inputs.forEach(input => {
 
         this.value = this.value[0] == '-' ? // Se o primeiro valor for '-'
             this.value[1] == '.' ? this.value[1] = this.value.slice(0, 1) : this.value // O segundo valor é um '.'? Se sim apague o ponto cortando do primeiro valor até o segundo (deixando o segundo de fora) e adicionando um caractere vazio. Se não, deixe o mesmo valor.
-        : this.value = this.value[0] == '.' ? '': this.value // Se não a primeira letra é um ponto? Se sim troque por nada
+        : this.value = this.value[0] == '.' ? '': this.value;// Se não a primeira letra é um ponto? Se sim troque por nada
 
-        for(i=0; i<this.value.length; i++){
-
-            if(this.value[i] == '.') this.value = this.value.slice(0, i+3);
-
-
-        }
-
+        this.value = this.value.includes('.') ? this.value = this.value.slice(0, this.value.indexOf('.') + 3) : this.value ; //O valor do input possui ponto? se sim, corte o valor do começo até o valor de onde está o ponto + 2, se não deixe como está
+    
+        this.value = this.value.length > 7 ? this.value.slice(0, 7) : this.value;
     })
 
 })
